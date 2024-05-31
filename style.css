@@ -1,0 +1,72 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.startgame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.game{
+    display: none;
+    width: 1000px;
+    height: 230px;
+    margin: auto;
+    background: url(image/achtergrond_game.png)
+}
+
+#score {
+    font-size: larger;
+    position: absolute;
+    top: 0;
+    right: 10;
+}
+
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: rgb(220, 77, 0);
+    position:relative;
+    left: 200px;
+    top: 150px;
+}
+ 
+.animatie{
+    animation: character 600ms infinite linear;
+}
+ 
+@keyframes character{
+    0%{top: 150px}
+    30%{top: 100px}
+    70%{top: 100px}
+    100%{top: 150px}
+}
+ 
+#blok{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 100vw;
+    animation: block 4s infinite linear;
+}
+
+@keyframes block{
+    0%{left: 1000px;}
+    100%{left:0px;}
+    }
+ 
+img {
+    width: 150px;
+    height: 150px;
+    padding-top: 190px;
+    padding-left: 185px;
+}
+
+/* Bron voor gedeelte van CSS: https://www.youtube.com/watch?v=bG2BmmYr9NQ */
